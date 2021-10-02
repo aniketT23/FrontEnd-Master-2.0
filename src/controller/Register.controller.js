@@ -39,12 +39,6 @@ router.get("/home", async(req, res) => {
         users: users
     })
 })
-router.get("/courses", async(req, res) => {
-    const users = await Users.find().lean().exec();
-    res.render("courses.ejs", {
-        users: users
-    })
-})
 
 router.get("/login", async(req, res) => {
     const users = await Users.find().lean().exec();
@@ -59,6 +53,11 @@ router.get("/dashboard", async(req, res) => {
     res.render("dashboard.ejs", {
         users: users
     })
+})
+
+router.get("/learn", async(req, res) => {
+
+    res.render("learn.ejs")
 })
 
 
