@@ -1643,17 +1643,13 @@
 
         val.addEventListener("input", search);
 
-        var x = localStorage.getItem("userdata");
-        var y = JSON.parse(x);
-        console.log(y);
+
 
         var user = document.getElementById("login");
+        let x = localStorage.getItem("looger");
+        console.log(x);
 
-
-        y.forEach(function(p) {
-
-            user.innerHTML = p.username;
-        })
+        user.innerHTML = x;
     </script>
 </body>
 
