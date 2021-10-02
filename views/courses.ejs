@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Masters</title>
+    <link rel="stylesheet" type="text/css" href="courses.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="inner">
+            <div class="wraps">
+                <div class="logos"><a class="s-tr" href="home">FrontendMasters</a></div>
+
+
+                <label class="NavMobileHamburger" for="open-nav-main">Menu</label>
+
+
+
+                <nav class="Nav NavMobile NavMain"><input class="toggle-target" id="open-nav-main" type="checkbox">
+                    <ul id="top">
+                        <li class="items"><a href="courses">Courses</a></li>
+                        <li class="items"><a href="#">Learn</a></li>
+                        <li class="items"><a href="register">Pricing</a></li>
+                        <li class="items"><a onclick="login()" id="login" href="login">Login</a></li>
+
+                        <li class="items"><a onclick="signup()" class="Button ButtonRed" href="register">Join Now</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <svg class="polygon" viewbox="0 0 100 10" preserveaspectratio="none">
+        <defs>
+            <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#c02d28"></stop>
+                <stop offset="100%" stop-color="#e66225"></stop>
+            </linearGradient>
+        </defs>
+        <polygon points="0,2 0,0 100,0 100,10" fill="url(#linear)"></polygon>
+    </svg>
+    </header>
+
+
+
+    <!-- header -->
+
+
+
+
+    <div id="title">
+        <h1>Frontend Master Courses</h1>
+
+        <input id="search" type="text" placeholder="Type to search..." />
+    </div>
+    <div id="taskbar">
+        <nav class="course-nav">
+            <a id="aCourse" href="#">All Courses</a>
+            <a id="pCourse" href="#">Popular Courses</a>
+            <a id="lCourse" href="#">Learning Paths</a>
+        </nav>
+    </div>
+
+    <div id="popular-main">
+        <div>
+            <img src="https://static.frontendmasters.com/assets/courses/2021-05-04-complete-react-v6/thumb.webp" alt="v6" />
+            <div>
+                <h2>Complete Intro to React, v6</h2>
+                <div class="author-name">
+                    <img src="https://static.frontendmasters.com/assets/teachers/holt/thumb.webp" alt="Brain" />
+                    <div>Brain Holt <span><br> Stripe</span> </div>
+                </div>
+                <p>
+                    Much more than an intro, you’ll build with the latest features in React, including hooks, effects, context, and portals. Learn to build real-world apps from the ground up using the latest tools in the React ecosystem, like Parcel, ESLint, Prettier, and
+                    React Router!
+                </p>
+                <div>
+                    9 hours,4 minutes
+                    <Strong>CC</Strong>
+                </div>
+                <div class="course-btn">
+
+                    <a href="particularCourse.html">Watch Free Preview</a>
+                    <a href="#">Get Full Access</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <img src="https://static.frontendmasters.com/assets/courses/2018-06-12-web-development-v2/thumb.webp" alt="v6" />
+            <div>
+                <h2>Complete Intro to Web Development, v2</h2>
+                <div class="author-name">
+                    <img src="https://static.frontendmasters.com/assets/teachers/holt/thumb.webp" alt="Brain" />
+                    <div>Brain Holt <span><br> Stripe</span> </div>
+                </div>
+                <p>
+                    More than an introduction, in this course you’ll go from building your first website to having the foundation for becoming a professional web developer!
+                </p>
+                <div>
+                    11 hours,5 minutes
+                    <Strong>CC</Strong>
+                </div>
+                <div class="course-btn">
+
+                    <a href="particularCourse.html">Watch Free Preview</a>
+                    <a href="#">Get Full Access</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <img src="https://static.frontendmasters.com/assets/courses/2020-01-07-javascript-hard-parts-v2/thumb.webp" alt="v6" />
+            <div>
+                <h2>JavaScript: The Hard Parts, v2</h2>
+                <div class="author-name">
+                    <img src="https://static.frontendmasters.com/assets/teachers/sentance/thumb.webp" alt="Brain" />
+                    <div>Will Sentance<span><br> Codesmith</span> </div>
+                </div>
+                <p>
+                    Take your JavaScript to the next level. Gain an understanding of callbacks, higher order functions, closure, asynchronous and object-oriented JavaScript!
+                </p>
+                <div>
+                    6 hours,41 minutes
+                    <Strong>CC</Strong>
+                </div>
+                <div class="course-btn">
+
+                    <a href="particularCourse.html">Watch Free Preview</a>
+                    <a href="#">Get Full Access</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div>
+            <img src="https://static.frontendmasters.com/assets/courses/2019-06-20-getting-started-javascript-v2/thumb.webp" alt="v6" />
+            <div>
+                <h2>Getting Started with JavaScript, v2</h2>
+                <div class="author-name">
+                    <img src="https://static.frontendmasters.com/assets/teachers/simpson/thumb.webp" alt="Brain" />
+                    <div>Kyle Simpson <span><br> You Don't Know JS</span> </div>
+                </div>
+                <p>
+                    "Get a tour of the building blocks of programming like variables, loops, functions and operations. Then learn the three main pillars of JavaScript: Types and Coercion, Scope and Closure and JavaScript’s “this” and Prototype system."
+                </p>
+                <div>
+                    2 hours,40 minutes
+                    <Strong>CC</Strong>
+                </div>
+                <div class="course-btn">
+
+                    <a href="particularCourse.html">Watch Free Preview</a>
+                    <a href="#">Get Full Access</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div id="course-content">
+        <div class="course-box">
+            <div class="cont">
+                <div class="info">
+                    <h2><a href="#">Intermediate TypeScript</a></h2>
+                    <div class="img-name">
+                        <img src="https://static.frontendmasters.com/assets/teachers/north/thumb.webp" alt="Mike North" />
+                        <div>Mike North <span><br> LinkedIn</span>
+
+                        </div>
+                    </div>
+                    <div class="discription">
+                        <p>TypeScript adds a powerful type system on top of your JavaScript to catch bugs before they happen and provide a superior developer experience for collaborative teams.</p>
+                    </div>
+                    <div>
+                        2 hours,48 minutes
+                        <Strong>CC</Strong>
+                    </div>
+                </div>
+                <div class="course-btns">
+
+                    <a href="particularCourse.html">Watch Free Preview</a>
+                    <a href="#">Get Full Access</a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="course-box">
+            <div class="cont">
+                <div class="info">
+                    <h2><a href="#">Introduction to Node.js, v2</a></h2>
+                    <div class="img-name">
+                        <img src="https://static.frontendmasters.com/assets/teachers/moss/thumb.webp" alt="scott moss" />
+                        <div>Scott Moss <span><br> Netflix</span>
+
+                        </div>
+                    </div>
+                    <div class="discription">
+                        <p> Transfer your JavaScript skills to the server-side and level up to a full-stack engineer! By learning the foundations of Node.js, you’ll be able to do a lot more with JavaScript.
+                        </p>
+                    </div>
+                    <div>
+                        4 hours, 51 minutes
+                        <Strong>CC</Strong>
+                    </div>
+                </div>
+                <div class="course-btns">
+                    <a href="particularCourse.html">Watch Free Preview</a>
+                    <a href="#">Get Full Access</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="course-box">
+            <div class="cont">
+                <div class="info">
+                    <h2><a href="#">Complete Intro to Computer Science</a></h2>
+                    <div class="img-name">
+                        <img src="https://static.frontendmasters.com/assets/teachers/holt/thumb.webp" alt="Brain" />
+                        <div>Brain Holt <span><br> Stripe</span>
+
+                        </div>
+                    </div>
+                    <div class="discription">
+                        <p>Even without a traditional computer science background, you’ll be able to learn big computer science topics: Algorithms and Big O Analysis, Recursion, Sorting, Data Structures, AVL Trees, Binary Search Trees, Tree Traversals, and
+                            Path Finding.</p>
+                    </div>
+                    <div>
+                        9 hours,4 minutes
+                        <Strong>CC</Strong>
+                    </div>
+                </div>
+                <div class="course-btns">
+
+                    <a href="particularCourse.html">Watch Free Preview</a>
+                    <a href="#">Get Full Access</a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="course-box">
+            <div class="cont">
+                <div class="info">
+                    <h2><a href="#">Redux Fundamentals (feat. React)</a></h2>
+                    <div class="img-name">
+                        <img src="https://static.frontendmasters.com/assets/teachers/kinney/thumb.webp" alt="Steve" />
+                        <div>Steve Kinney <span><br>Twilio</span>
+
+                        </div>
+                    </div>
+                    <div class="discription">
+                        <p>Learn the Redux API from scratch, then learn to hook Redux into a React application. Also learn how to extend Redux with various tools from its ecosystem, including Reselect, Immer, and Redux Toolkit, to reduce boilerplate and
+                            speed up your development!</p>
+                    </div>
+                    <div>
+                        4 hours,41 minutes
+                        <Strong>CC</Strong>
+                    </div>
+                </div>
+                <div class="course-btns">
+
+                    <a href="particularCourse.html">Watch Free Preview</a>
+                    <a href="#">Get Full Access</a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="course-box">
+            <div class="cont">
+                <div class="info">
+                    <h2><a href="#">Website Accessibility, v2</a></h2>
+                    <div class="img-name">
+                        <img src="https://static.frontendmasters.com/assets/teachers/kuperman/thumb.webp" alt="jon" />
+                        <div>Jon Kuperman <span><br>Cloudflare</span>
+
+                        </div>
+                    </div>
+                    <div class="discription">
+                        <p>Audit and fix accessibility issues on any website! Learn keyboard accessibility, focus control & ARIA roles to make sites accessible to screen readers and those with disabilities.</p>
+                    </div>
+                    <div>
+                        2 hours,52 minutes
+                        <Strong>CC</Strong>
+                    </div>
+                </div>
+                <div class="course-btns">
+
+                    <a href="particularCourse.html">Watch Free Preview</a>
+                    <a href="#">Get Full Access</a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="course-box">
+            <div class="cont">
+                <div class="info">
+                    <h2><a href="#">TypeScript Fundamentals, v3</a></h2>
+                    <div class="img-name">
+                        <img src="https://static.frontendmasters.com/assets/teachers/north/thumb.webp" alt="Mike North" />
+                        <div>Mike North <span><br> LinkedIn</span>
+
+                        </div>
+                    </div>
+                    <div class="discription">
+                        <p>TypeScript adds a powerful type system on top of your JavaScript to catch bugs before they happen and provide a superior developer experience for collaborative teams.</p>
+                    </div>
+                    <div>
+                        4 hours, 27 minutes
+                        <Strong>CC</Strong>
+                    </div>
+                </div>
+                <div class="course-btns">
+
+                    <a href="particularCourse.html">Watch Free Preview</a>
+                    <a href="#">Get Full Access</a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+
+
+    <div id="box2">
+
+
+
+
+        <footer role="contentinfo" class="FooterMain">
+            <div class="wraps">
+                <div class="row">
+                    <div class="logos"><a class="s-tr" href="/">FrontendMasters</a></div>
+
+                    <nav class="Nav NawvMobile NavFooter">
+
+                        <ul>
+                            <li class="items"><a href="courses.html">Courses</a></li>
+                            <li class="items"><a href="#">Learn</a></li>
+                            <li class="items"><a href="#">Teachers</a></li>
+                            <li class="items"><a href="#">Guides</a></li>
+                            <li class="items"><a href="#">Pricing</a></li>
+                            <li class="items"><a onclick="login()">Login</a></li>
+                            <li class="items"><a onclick="signup()">Join Now</a></li>
+                            <li class="items"><a href="#">FAQ</a></li>
+                        </ul>
+                    </nav>
+
+
+                    <div class="app">
+                        <img src="https://developer.apple.com/assets/elements/icons/download-on-the-app-store/download-on-the-app-store.svg" width="150px" height="70px">
+                        <a id="" class="Android"></a> <img class="app" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" height="65">
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="twitter">
+                        <img src="https://image.flaticon.com/icons/png/128/733/733579.png" width="40px" height="40px" class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/174/174857.png" width="40px" height="40px" class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/733/733547.png" width="40px" height="40px" class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/1409/1409946.png" width="40px" height="40px" class="imageGap">
+                        <p class="email">Email: <a href="">support@frontendmasters.com</a></p>
+
+                    </div>
+                    <div class="copyright">© 2021 Frontend Masters &middot;
+                        <a href="https://static.frontendmasters.com/assets/legal/MasterServicesAgreement.pdf">Terms of
+                        Service</a> &middot; <a href="https://static.frontendmasters.com/assets/legal/PrivacyPolicy.pdf">Privacy Policy</a>
+
+                    </div>
+                    <div class="end1">Frontend Masters is proudly made in Minneapolis, MN</div>
+
+
+                </div>
+            </div>
+    </div>
+    <!-- <script src="login.js"></script> -->
+    <script src="courses.js"></script>
+
+</body>
+
+</html>
