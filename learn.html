@@ -1,43 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/lay.css" />
     <title>Document</title>
     <style>
-      .image {
-        width: 130px;
-        height: 130px;
-      }
+        .image {
+            width: 130px;
+            height: 130px;
+        }
     </style>
-  </head>
-  <body>
-    <main id="main-content" role="main">
-      <section class="s-vp-xl" id="paths-list">
-        <header class="s-wrap">
-          <img src="images/Capture.PNG" alt="" class="image" />
-          <h1>Learning Paths</h1>
-          <h2>
-            Guided paths to expand your abilities as a well-rounded engineer!
-          </h2>
-        </header>
+</head>
 
-        <div class="s-wrap">
-          <hr />
-          <ul class="PathList">
-            <li class="PathItem">
-              <div class="flex-inner">
-                <a href="/learn/beginner/">
-                  <div class="path-icon-wrap">
-                    <div class="header-progress-completed"></div>
-                    <svg
-                      class="circle-progress"
-                      viewBox="0 0 120 120"
-                      data-slug="beginner"
-                      data-progress="0"
-                    >
+<body>
+  <header class="header">
+    <div class="inner">
+        <div class="wraps">
+            <div class="logos"><a class="s-tr" href="Loginn.html">FrontendMasters</a></div>
+
+
+            <label class="NavMobileHamburger" for="open-nav-main">Menu</label>
+
+
+
+            <nav class="Nav NavMobile NavMain"><input class="toggle-target" id="open-nav-main" type="checkbox">
+                <ul>
+                    <li class="items"><a href="HTML/login.html">Courses</a></li>
+                    <li class="items"><a href="HTML/joinnow.html">Learn</a></li>
+                    <li class="items"><a href="HTML/joinnow.html">Pricing</a></li>
+                    <li class="items"><a onclick="login()" id="login">Login</a></li>
+                    <li class="items"><a onclick="signup()" class="Button ButtonRed">Join Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <svg class="polygon" viewbox="0 0 100 10" preserveaspectratio="none">
+    <defs>
+        <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#c02d28"></stop>
+            <stop offset="100%" stop-color="#e66225"></stop>
+        </linearGradient>
+    </defs>
+    <polygon points="0,2 0,0 100,0 100,10" fill="url(#linear)"></polygon>
+</svg>
+</header>
+    <main id="main-content" role="main">
+        <section class="s-vp-xl" id="paths-list">
+            <header class="s-wrap">
+                <img src="img/Capture.PNG" alt="" class="image" />
+                <h1>Learning Paths</h1>
+                <h2>
+                    Guided paths to expand your abilities as a well-rounded engineer!
+                </h2>
+            </header>
+
+
+            <div class="s-wrap">
+                <hr />
+                <ul class="PathList">
+                    <li class="PathItem">
+                        <div class="flex-inner">
+                            <a href="#">
+                                <div class="path-icon-wrap">
+                                    <div class="header-progress-completed"></div>
+                                    <svg class="circle-progress" viewBox="0 0 120 120" data-slug="beginner" data-progress="0">
                       <text
                         class="circle-progress-value"
                         x="60"
@@ -69,23 +99,18 @@
                         style="stroke-dashoffset: 360"
                       ></circle>
                     </svg>
-                  </div>
-                  <h2>Beginner</h2>
-                  <p>Your Path to Becoming a Career-Ready Web Developer!</p>
-                </a>
-                <a
-                  data-slug-state="beginner"
-                  style="background-color: #c63528"
-                  class="Button ButtonSmall"
-                  href="/learn/beginner/"
-                  >Start</a
+                                </div>
+                                <h2>Beginner</h2>
+                                <p>Your Path to Becoming a Career-Ready Web Developer!</p>
+                            </a>
+                            <a data-slug-state="beginner" style="background-color: #c63528" class="Button ButtonSmall" href="#">Start</a
                 >
               </div>
             </li>
 
             <li class="PathItem">
               <div class="flex-inner">
-                <a href="/learn/professional/">
+                <a href="#">
                   <div class="path-icon-wrap">
                     <div class="header-progress-completed"></div>
                     <svg
@@ -129,19 +154,14 @@
                   <h2>Professional</h2>
                   <p>Go From Professional Web Developer to Lead Engineer</p>
                 </a>
-                <a
-                  data-slug-state="professional"
-                  style="background-color: #c63528"
-                  class="Button ButtonSmall"
-                  href="/learn/professional/"
-                  >Start</a
+                            <a data-slug-state="professional" style="background-color: #c63528" class="Button ButtonSmall" href="#">Start</a
                 >
               </div>
             </li>
 
             <li class="PathItem">
               <div class="flex-inner">
-                <a href="/learn/advanced/">
+                <a href="#">
                   <div class="path-icon-wrap">
                     <div class="header-progress-completed"></div>
                     <svg
@@ -188,19 +208,14 @@
                     in the Web Browser
                   </p>
                 </a>
-                <a
-                  data-slug-state="advanced"
-                  style="background-color: #c63528"
-                  class="Button ButtonSmall"
-                  href="/learn/advanced/"
-                  >Start</a
+                            <a data-slug-state="advanced" style="background-color: #c63528" class="Button ButtonSmall" href="#">Start</a
                 >
               </div>
             </li>
 
             <li class="PathItem">
               <div class="flex-inner">
-                <a href="/learn/computer-science/">
+                <a href="#">
                   <div class="path-icon-wrap">
                     <div class="header-progress-completed"></div>
                     <svg
@@ -244,19 +259,14 @@
                   <h2>Computer Science</h2>
                   <p>Learning Computer Science with JavaScript</p>
                 </a>
-                <a
-                  data-slug-state="computer-science"
-                  style="background-color: #c63528"
-                  class="Button ButtonSmall"
-                  href="/learn/computer-science/"
-                  >Start</a
+                            <a data-slug-state="computer-science" style="background-color: #c63528" class="Button ButtonSmall" href="#">Start</a
                 >
               </div>
             </li>
 
             <li class="PathItem">
               <div class="flex-inner">
-                <a href="/learn/fullstack/">
+                <a href="#">
                   <div class="path-icon-wrap">
                     <div class="header-progress-completed"></div>
                     <svg
@@ -300,19 +310,14 @@
                   <h2>Fullstack</h2>
                   <p>Expand Your Abilities and Master the Server</p>
                 </a>
-                <a
-                  data-slug-state="fullstack"
-                  style="background-color: #c63528"
-                  class="Button ButtonSmall"
-                  href="/learn/fullstack/"
-                  >Start</a
+                            <a data-slug-state="fullstack" style="background-color: #c63528" class="Button ButtonSmall" href="#">Start</a
                 >
               </div>
             </li>
 
             <li class="PathItem">
               <div class="flex-inner">
-                <a href="/learn/designers-code/">
+                <a href="#">
                   <div class="path-icon-wrap">
                     <div class="header-progress-completed"></div>
                     <svg
@@ -356,12 +361,7 @@
                   <h2>Design to Code</h2>
                   <p>Make Your Designs Come to Life Through Code!</p>
                 </a>
-                <a
-                  data-slug-state="designers-code"
-                  style="background-color: #c63528"
-                  class="Button ButtonSmall"
-                  href="/learn/designers-code/"
-                  >Start</a
+                            <a data-slug-state="designers-code" style="background-color: #c63528" class="Button ButtonSmall" href="#">Start</a
                 >
               </div>
             </li>
@@ -371,7 +371,7 @@
 
       <section class="s-vp-xl" id="electives-list">
         <header class="s-wrap">
-          <img src="images/Capture1.PNG" alt="" / class="image">
+          <img src="img/Capture1.PNG" alt=""  class="image">
           <h1>Topic Paths:</h1>
           <h2>Focus on a specific area in web development.</h2>
         </header>
@@ -380,7 +380,7 @@
           <ul class="PathList">
             <li class="PathItem">
               <div class="flex-inner">
-                <a href="/learn/javascript/">
+                <a href="#">
                   <div class="path-icon-wrap">
                     <div class="header-progress-completed"></div>
                     <svg
@@ -424,19 +424,14 @@
                   <h2>JavaScript</h2>
                   <p>Write Professional, Modern JavaScript</p>
                 </a>
-                <a
-                  data-slug-state="javascript"
-                  style="background-color: #b3911c"
-                  class="Button ButtonSmall"
-                  href="/learn/javascript/"
-                  >Start</a
+                            <a data-slug-state="javascript" style="background-color: #b3911c" class="Button ButtonSmall" href="#">Start</a
                 >
               </div>
             </li>
 
             <li class="PathItem">
               <div class="flex-inner">
-                <a href="/learn/css/">
+                <a href="#">
                   <div class="path-icon-wrap">
                     <div class="header-progress-completed"></div>
                     <svg
@@ -482,19 +477,14 @@
                     Learn CSS, from Laying Out Websites to Performant Animations
                   </p>
                 </a>
-                <a
-                  data-slug-state="css"
-                  style="background-color: #278cc7"
-                  class="Button ButtonSmall"
-                  href="/learn/css/"
-                  >Start</a
+                            <a data-slug-state="css" style="background-color: #278cc7" class="Button ButtonSmall" href="#">Start</a
                 >
               </div>
             </li>
 
             <li class="PathItem">
               <div class="flex-inner">
-                <a href="/learn/node-js/">
+                <a href="#">
                   <div class="path-icon-wrap">
                     <div class="header-progress-completed"></div>
                     <svg
@@ -538,19 +528,14 @@
                   <h2>Node.js</h2>
                   <p>Build Web APIs and Applications with Node.js</p>
                 </a>
-                <a
-                  data-slug-state="node-js"
-                  style="background-color: #00873a"
-                  class="Button ButtonSmall"
-                  href="/learn/node-js/"
-                  >Start</a
+                            <a data-slug-state="node-js" style="background-color: #00873a" class="Button ButtonSmall" href="#">Start</a
                 >
               </div>
             </li>
 
             <li class="PathItem">
               <div class="flex-inner">
-                <a href="/learn/react/">
+                <a href="#">
                   <div class="path-icon-wrap">
                     <div class="header-progress-completed"></div>
                     <svg
@@ -596,19 +581,14 @@
                     Be Productive with React.js, Today's Most Popular Framework
                   </p>
                 </a>
-                <a
-                  data-slug-state="react"
-                  style="background-color: #008697"
-                  class="Button ButtonSmall"
-                  href="/learn/react/"
-                  >Start</a
+                            <a data-slug-state="react" style="background-color: #008697" class="Button ButtonSmall" href="#">Start</a
                 >
               </div>
             </li>
 
             <li class="PathItem">
               <div class="flex-inner">
-                <a href="/learn/vue/">
+                <a href="#">
                   <div class="path-icon-wrap">
                     <div class="header-progress-completed"></div>
                     <svg
@@ -652,19 +632,14 @@
                   <h2>Vue.js</h2>
                   <p>Learn Vue.js, An Easy to Pick Up and Powerful Framework</p>
                 </a>
-                <a
-                  data-slug-state="vue"
-                  style="background-color: #00bb83"
-                  class="Button ButtonSmall"
-                  href="/learn/vue/"
-                  >Start</a
+                            <a data-slug-state="vue" style="background-color: #00bb83" class="Button ButtonSmall" href="#">Start</a
                 >
               </div>
             </li>
 
             <li class="PathItem">
               <div class="flex-inner">
-                <a href="/learn/angular/">
+                <a href="#">
                   <div class="path-icon-wrap">
                     <div class="header-progress-completed"></div>
                     <svg
@@ -711,19 +686,14 @@
                     led by Google
                   </p>
                 </a>
-                <a
-                  data-slug-state="angular"
-                  style="background-color: #ff002f"
-                  class="Button ButtonSmall"
-                  href="/learn/angular/"
-                  >Start</a
+                            <a data-slug-state="angular" style="background-color: #ff002f" class="Button ButtonSmall" href="#">Start</a
                 >
               </div>
             </li>
 
             <li class="PathItem">
               <div class="flex-inner">
-                <a href="/learn/typescript/">
+                <a href="#">
                   <div class="path-icon-wrap">
                     <div class="header-progress-completed"></div>
                     <svg
@@ -767,19 +737,14 @@
                   <h2>TypeScript</h2>
                   <p>Add Types to Your Web and Node.js Apps with TypeScript</p>
                 </a>
-                <a
-                  data-slug-state="typescript"
-                  style="background-color: #4476c0"
-                  class="Button ButtonSmall"
-                  href="/learn/typescript/"
-                  >Start</a
+                            <a data-slug-state="typescript" style="background-color: #4476c0" class="Button ButtonSmall" href="#">Start</a
                 >
               </div>
             </li>
 
             <li class="PathItem">
               <div class="flex-inner">
-                <a href="/learn/functional-javascript/">
+                <a href="#">
                   <div class="path-icon-wrap">
                     <div class="header-progress-completed"></div>
                     <svg
@@ -823,19 +788,14 @@
                   <h2>Functional JavaScript</h2>
                   <p>Power Up Your JavaScript with Functional Programming</p>
                 </a>
-                <a
-                  data-slug-state="functional-javascript"
-                  style="background-color: #5eb254"
-                  class="Button ButtonSmall"
-                  href="/learn/functional-javascript/"
-                  >Start</a
+                            <a data-slug-state="functional-javascript" style="background-color: #5eb254" class="Button ButtonSmall" href="#">Start</a
                 >
               </div>
             </li>
 
             <li class="PathItem">
               <div class="flex-inner">
-                <a href="/learn/python/">
+                <a href="#">
                   <div class="path-icon-wrap">
                     <div class="header-progress-completed"></div>
                     <svg
@@ -881,19 +841,14 @@
                     Learn Python, the popular language for Data Science and more
                   </p>
                 </a>
-                <a
-                  data-slug-state="python"
-                  style="background-color: #4772a3"
-                  class="Button ButtonSmall"
-                  href="/learn/python/"
-                  >Start</a
+                            <a data-slug-state="python" style="background-color: #4772a3" class="Button ButtonSmall" href="#">Start</a
                 >
               </div>
             </li>
 
             <li class="PathItem">
               <div class="flex-inner">
-                <a href="/learn/d3-js/">
+                <a href="#">
                   <div class="path-icon-wrap">
                     <div class="header-progress-completed"></div>
                     <svg
@@ -937,19 +892,14 @@
                   <h2>Data Visualization with D3.js</h2>
                   <p>Turn Data into Visualizations with D3.js</p>
                 </a>
-                <a
-                  data-slug-state="d3-js"
-                  style="background-color: #aa3f3f"
-                  class="Button ButtonSmall"
-                  href="/learn/d3-js/"
-                  >Start</a
+                            <a data-slug-state="d3-js" style="background-color: #aa3f3f" class="Button ButtonSmall" href="#">Start</a
                 >
               </div>
             </li>
 
             <li class="PathItem">
               <div class="flex-inner">
-                <a href="/learn/webpack/">
+                <a href="#">
                   <div class="path-icon-wrap">
                     <div class="header-progress-completed"></div>
                     <svg
@@ -996,19 +946,14 @@
                     JavaScript
                   </p>
                 </a>
-                <a
-                  data-slug-state="webpack"
-                  style="background-color: #174a80"
-                  class="Button ButtonSmall"
-                  href="/learn/webpack/"
-                  >Start</a
+                            <a data-slug-state="webpack" style="background-color: #174a80" class="Button ButtonSmall" href="#">Start</a
                 >
               </div>
             </li>
 
             <li class="PathItem">
               <div class="flex-inner">
-                <a href="/learn/async-rx-js/">
+                <a href="#">
                   <div class="path-icon-wrap">
                     <div class="header-progress-completed"></div>
                     <svg
@@ -1052,12 +997,7 @@
                   <h2>Async JS &amp; Rx.js</h2>
                   <p>Learn Asynchronous JavaScript and Rx.js Observables</p>
                 </a>
-                <a
-                  data-slug-state="async-rx-js"
-                  style="background-color: #d2188e"
-                  class="Button ButtonSmall"
-                  href="/learn/async-rx-js/"
-                  >Start</a
+                            <a data-slug-state="async-rx-js" style="background-color: #d2188e" class="Button ButtonSmall" href="#">Start</a
                 >
               </div>
             </li>
@@ -1065,5 +1005,55 @@
         </div>
       </section>
     </main>
+    <footer role="contentinfo" class="FooterMain">
+      <div class="wraps">
+          <div class="row">
+              <div class="logos"><a class="s-tr" href="/">FrontendMasters</a></div>
+
+              <nav class="Nav NawvMobile NavFooter">
+
+                  <ul>
+                      <li class="items"><a href="#">Courses</a></li>
+                      <li class="items"><a href="#">Learn</a></li>
+                      <li class="items"><a href="#">Teachers</a></li>
+                      <li class="items"><a href="#">Guides</a></li>
+                      <li class="items"><a href="#">Pricing</a></li>
+                      <li class="items"><a onclick="login()">Login</a></li>
+                      <li class="items"><a onclick="signup()">Join Now</a></li>
+                      <li class="items"><a href="#">FAQ</a></li>
+                  </ul>
+              </nav>
+
+
+              <div class="app">
+                  <img src="https://developer.apple.com/assets/elements/icons/download-on-the-app-store/download-on-the-app-store.svg" width="150px" height="70px">
+                  <a id="" class="Android"></a> <img class="app" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" height="65">
+
+                  </a>
+
+              </div>
+
+
+              <div class="twitter">
+                  <img src="https://image.flaticon.com/icons/png/128/733/733579.png" width="40px" height="40px" class="imageGap">
+                  <img src="https://image.flaticon.com/icons/png/128/174/174857.png" width="40px" height="40px" class="imageGap">
+                  <img src="https://image.flaticon.com/icons/png/128/733/733547.png" width="40px" height="40px" class="imageGap">
+                  <img src="https://image.flaticon.com/icons/png/128/1409/1409946.png" width="40px" height="40px" class="imageGap">
+                  <p class="email">Email: <a href="">support@frontendmasters.com</a></p>
+
+              </div>
+              <div class="copyright">© 2021 Frontend Masters &middot;
+                  <a href="https://static.frontendmasters.com/assets/legal/MasterServicesAgreement.pdf">Terms of
+                  Service</a> &middot; <a href="https://static.frontendmasters.com/assets/legal/PrivacyPolicy.pdf">Privacy Policy</a>
+
+              </div>
+              <div class="end1">Frontend Masters is proudly made in Minneapolis, MN</div>
+
+
+          </div>
+      </div>
+</div>
+
+</footer>
   </body>
 </html>
