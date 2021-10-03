@@ -1,0 +1,27 @@
+{
+    "name": "utkarsh",
+    "version": "1.0.0",
+    "description": "---\r This project is a clone of Frontend-Masters,an edu-tech company offering various courses for web Development,frontend offers abundant courses like javascript, vue, react with different tutors.\r Frontend Masters is an Edtech Website that lets users take courses related to frontend technologies like CSS, React, Angular, Vue, and many more. It has the ability to combining a simple user experience and interface with enough depth for power users.",
+    "main": "index.js",
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "mongoose": "^6.0.8"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "server": "nodemon src/server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aniketT23/FrontEnd-Master-2.0.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/aniketT23/FrontEnd-Master-2.0/issues"
+    },
+    "homepage": "https://github.com/aniketT23/FrontEnd-Master-2.0#readme"
+}

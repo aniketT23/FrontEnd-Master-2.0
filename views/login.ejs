@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>LoginPage</title>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+    <div class="outer-flex">
+        <div class="inner-flex">
+            <!-- header starts from here -->
+            <header class="header">
+                <div class="inner">
+                    <div class="wraps">
+                        <div class="logos"><a class="s-tr" href="home">FrontendMasters</a></div>
+                        <label class="NavMobileHamburger" for="open-nav-main">Menu</label>
+                        <nav class="Nav NavMobile NavMain"><input class="toggle-target" id="open-nav-main" type="checkbox">
+                            <ul>
+                                <li class="items"><a href="courses">Courses</a></li>
+                                <li class="items"><a href="learn">Learn</a></li>
+                                <li class="items"><a href="register">Pricing</a></li>
+                                <li class="items"><a onclick="login()" id="login" href="login">Login</a></li>
+                                <li class="items"><a onclick="signup()" class="Button ButtonRed" href="register">Join Now</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <svg class="polygon" viewbox="0 0 100 10" preserveaspectratio="none">
+                    <defs>
+                        <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#c02d28"></stop>
+                            <stop offset="100%" stop-color="#e66225"></stop>
+                        </linearGradient>
+                    </defs>
+                    <polygon points="0,2 0,0 100,0 100,10" fill="url(#linear)"></polygon>
+                </svg>
+            </header>
+            <div id="box1">
+                <label>Username or Email</label>
+                <br>
+                <input type="text" class="text" id="username" placeholder="Username or Email">
+                <br>
+                <p class="alert_color" id="email_alert"></p>
+                <label>Password</label>
+                <br>
+                <input type="password" class="text" id="password" placeholder="Password">
+                <br>
+                <p class="alert_color" id="password_alert"></p>
+                <input type="checkbox" id="horns" name="horns">
+                <label> Remember Me</label>
+                <br>
+                <button type="submit" id="login_btn" class="Button ButtonRed ButtonLarge">
+                    Log In
+                </button>
+                <a class="recover" href="/recover-password/">Forgot your password?</a>
+            </div>
+        </div>
+    </div>
+    <div id="box2">
+        <footer role="contentinfo" class="FooterMain">
+            <div class="wraps">
+                <div class="row">
+                    <div class="logos"><a class="s-tr" href="/">FrontendMasters</a></div>
+                    <nav class="Nav NawvMobile NavFooter">
+                        <ul>
+                            <li class="items"><a href="courses">Courses</a></li>
+                            <li class="items"><a href="learn">Learn</a></li>
+                            <li class="items"><a href="#">Teachers</a></li>
+                            <li class="items"><a href="#">Guides</a></li>
+                            <li class="items"><a href="register">Pricing</a></li>
+                            <li class="active"><a onclick="login()" id="login_user">Login</a></li>
+                            <li class="items"><a onclick="signup()">Join Now</a></li>
+                            <li class="items"><a href="#">FAQ</a></li>
+                        </ul>
+                    </nav>
+                    <div class="app">
+                        <img src="https://developer.apple.com/assets/elements/icons/download-on-the-app-store/download-on-the-app-store.svg" width="150px" height="70px">
+                        <a id="" class="Android"></a> <img class="app" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" height="65">
+                        </a>
+                    </div>
+                    <div class="twitter">
+                        <img src="https://image.flaticon.com/icons/png/128/733/733579.png" width="40px" height="40px" class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/174/174857.png" width="40px" height="40px" class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/733/733547.png" width="40px" height="40px" class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/1409/1409946.png" width="40px" height="40px" class="imageGap">
+                        <p class="email">Email: <a href="">support@frontendmasters.com</a></p>
+                    </div>
+                    <div class="copyright">© 2021 Frontend Masters &middot;
+                        <a href="https://static.frontendmasters.com/assets/legal/MasterServicesAgreement.pdf">Terms of
+                            Service</a> &middot; <a href="https://static.frontendmasters.com/assets/legal/PrivacyPolicy.pdf">Privacy Policy</a>
+
+                    </div>
+                    <div class="end1">Frontend Masters is proudly made in Minneapolis, MN</div>
+                </div>
+            </div>
+    </div>
+    </footer>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
+<script src="login.js">
+</script>

@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Masters</title>
+
+    <style>
+        *,
+         :after,
+         :before {
+            box-sizing: border-box;
+        }
+        
+        #sample {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+        }
+        
+        html {
+            line-height: 1.15;
+            tab-size: 4;
+        }
+        
+        #box2 {
+            background-color: red;
+            width: 100%;
+            height: 100%;
+            margin-top: 8%;
+        }
+        
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+        
+        hr {
+            color: inherit;
+            height: 0;
+        }
+        
+        b,
+        strong {
+            font-weight: bolder;
+        }
+        
+        button,
+        input,
+        select,
+        textarea {
+            font-family: inherit;
+            font-size: 100%;
+            line-height: 1.15;
+            margin: 0;
+        }
+        
+        button,
+        select {
+            text-transform: none;
+        }
+        
+        .header .inner:after,
+        .header .inner:before {
+            content: " ";
+            display: table;
+        }
+        
+        .header .inner:after,
+        .s-clearfix:after {
+            clear: both;
+        }
+        
+        .ButtonIcon.hide-text,
+        .NavMobileHamburger,
+        .s-tr {
+            border: 0;
+            color: transparent;
+            font: 0/0 a;
+            text-shadow: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            list-style-image: none;
+            padding-left: 0;
+        }
+        
+        .polygon {
+            pointer-events: none;
+        }
+        
+        body {
+            font-family: sans-serif;
+            letter-spacing: 0.2px;
+            font-size: 16px;
+            line-height: 1.5;
+            min-height: 100%;
+        }
+        
+        a {
+            color: rgb(223, 25, 25);
+        }
+        
+        a:hover {
+            color: #FFCDD2;
+        }
+        
+        p.email {
+            margin-top: -40px;
+        }
+        
+        .email {
+            margin-left: 80%;
+            font-size: 14px;
+        }
+        
+        button {
+            cursor: pointer;
+            font-family: inherit;
+        }
+        
+        .imageGap {
+            margin: 4px;
+        }
+        
+        img.app {
+            margin: 3px;
+        }
+        
+        img.lazyload {
+            opacity: 1;
+        }
+        
+        img.lazyloaded {
+            opacity: 1;
+        }
+        
+        nav ul {
+            margin: 0;
+        }
+        
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        strong {
+            font-weight: 600;
+        }
+        
+        ol {
+            padding-left: 20px;
+        }
+        
+        hr {
+            background: #8a8a8a;
+            border: 0;
+            height: 1px;
+        }
+        
+        div.twitter {
+            margin-bottom: 25px;
+        }
+        
+        .wraps {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1200px;
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 100%;
+        }
+        
+        @media only screen and (min-width: 568px) {
+            .email {
+                margin-left: 80%;
+                font-size: 12px;
+            }
+        }
+        
+        @media only screen and (min-width: 568px) {
+            .wraps {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+        
+        .wraps-thin {
+            max-width: 600px;
+        }
+        
+        .NavMobileHamburger,
+        .s-tr {
+            background-size: 100%;
+        }
+        
+        html {
+            height: 100%;
+        }
+        
+        .Button {
+            background: #c94f17;
+            border: none;
+            border-radius: 40px;
+            color: #fff;
+            display: block;
+            line-height: 1.25;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        
+        .Button:hover {
+            background: #e7682e;
+            color: #fff;
+        }
+        
+        .Button.disabled,
+        .Button[disabled] {
+            background: #8a8a8a !important;
+            color: #e6e6e6 !important;
+            cursor: not-allowed;
+        }
+        
+        @media only screen and (min-width: 568px) {
+            .Button {
+                display: inline-block;
+            }
+        }
+        
+        .ButtonRed {
+            background: #c02d28;
+        }
+        
+        .ButtonRed:hover {
+            background: #d43530;
+            cursor: pointer;
+        }
+        
+        .Buttoncolor:hover {
+            background: #d43530;
+        }
+        
+        .FmLogo a {
+            background-image: url(https://static.frontendmasters.com/assets/fm/js/static/frontendmasters.e1e10b58c1.svg);
+            display: block;
+            max-width: 40%;
+            height: 40px;
+            margin-top: 8px;
+            width: 250px;
+            margin-left: 51px;
+        }
+        
+        .FmLogo1 a {
+            background-image: url(https://static.frontendmasters.com/assets/fm/js/static/frontendmasters.e1e10b58c1.svg);
+            display: block;
+            max-width: 40%;
+            height: 40px;
+            margin-top: 8px;
+            width: 250px;
+            margin-left: 51px;
+        }
+        
+        .wraps-thin {
+            max-width: 600px;
+        }
+        
+        div.app .img {
+            width: 20%;
+            margin: 0px;
+        }
+        
+        .ButtonLarge {
+            font-size: 19px;
+            padding: 20px 30px;
+            margin-top: 16px;
+        }
+        
+        .FooterMain {
+            background: #111;
+            color: #8a8a8a;
+            font-size: 14px;
+            padding: 40px 0;
+        }
+        
+        .FooterMain .row {
+            clear: both;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+        
+        .FooterMain .NavFooter {
+            font-size: 16px;
+        }
+        
+        .FooterMain .contact a,
+        .FooterMain .copyright a {
+            text-decoration: none;
+        }
+        
+        .FooterMain .contact a:hover,
+        .FooterMain .copyright a:hover {
+            text-decoration: underline;
+        }
+        
+        .FooterMain .contact a {
+            display: inline-block;
+        }
+        
+        .FooterMain .contact span {
+            display: block;
+        }
+        
+        .FooterMain .copyright a {
+            color: #8a8a8a;
+        }
+        
+        .FooterMain .logos {
+            display: inline-block;
+        }
+        
+        .FooterMain .NavMobileHamburger {
+            float: right;
+        }
+        
+        #login:hover {
+            cursor: pointer;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .FooterMain .logos {
+                float: none;
+                margin: 0 20px 6px 0;
+            }
+            .FooterMain .NavFooter {
+                display: inline-block;
+                vertical-align: bottom;
+            }
+            .FooterMain .contact,
+            .FooterMain .copyright {
+                float: right;
+            }
+            .FooterMain .contact {
+                margin-top: 20px;
+            }
+            .FooterMain .contact span {
+                display: inline;
+                margin-left: 10px;
+            }
+        }
+        
+        .header {
+            background: linear-gradient(90deg, #3d0907, rgb(78, 29, 7));
+            color: #858585;
+            position: relative;
+            z-index: 99;
+        }
+        
+        .header .inner {
+            padding: 10px 0;
+        }
+        
+        .header .logos {
+            float: left;
+        }
+        
+        .header .NavMobileHamburger {
+            float: right;
+            position: relative;
+        }
+        
+        .header .NavMain {
+            clear: both;
+        }
+        
+        .header .polygon {
+            fill: #f5f1f0;
+            height: 24px;
+            left: 0;
+            position: absolute;
+            top: 100%;
+            width: 100%;
+        }
+        
+        @media only screen and (min-width: 568px) {
+            .header .logos {
+                float: none;
+            }
+            .header .NavMain {
+                margin-top: 10px;
+            }
+        }
+        
+        @media only screen and (min-width: 900px) {
+            .header .logos {
+                float: left;
+            }
+            .header .NavMain {
+                clear: none;
+                float: right;
+                margin-top: 0;
+            }
+            .header .NavMain .item {
+                line-height: 50px;
+            }
+        }
+        
+        .logos {
+            margin: 0;
+        }
+        
+        .logos a {
+            background-image: url(https://static.frontendmasters.com/assets/fm/js/frontendmasters.e1e10b58c1.svg);
+            display: block;
+            height: 40px;
+            margin-top: 5px;
+            width: 250px;
+            float: left;
+        }
+        
+        .MessageArea {
+            margin: 10px 0 0;
+            padding: 0;
+        }
+        
+        .MessageArea .Message {
+            margin: 5px 0;
+            padding: 10px;
+        }
+        
+        .Message {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid #8a8a8a;
+            border-radius: 5px;
+            margin: 20px 0;
+            padding: 5px 10px;
+        }
+        
+        .MessageAlert {
+            border-color: #e66225;
+            color: #e66225;
+        }
+        
+        .MessageHeader {
+            color: #e66225;
+        }
+        
+        .Nav a {
+            color: rgb(231, 219, 219);
+            line-height: 40px;
+            padding-left: 10px;
+            font-family: sans-serif;
+        }
+        
+        .Nav a,
+        .Nav a:hover {
+            -webkit-transition: color 0.2s;
+            -moz-transition: color 0.2s;
+            -o-transition: color 0.2s;
+            -ms-transition: color 0.2s;
+            transition: color 0.2s;
+        }
+        
+        .Nav a:hover {
+            color: #fff;
+        }
+        
+        .Nav .Button {
+            margin: 10px 0;
+            padding: 0 20px;
+            background-color: #c02d28;
+        }
+        
+        .Nav .active {
+            font-weight: 600;
+        }
+        
+        .Nav .active a {
+            color: #e6e6e6;
+        }
+        
+        @media only screen and (min-width: 568px) {
+            .Nav a {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .Nav li {
+                display: inline-block;
+            }
+        }
+        
+        .NavMobile .toggle-target,
+        .NavMobile ul {
+            display: none;
+        }
+        
+        .NavMobile .toggle-target:checked+ul {
+            display: block;
+        }
+        
+        .NavMobileToggle {
+            cursor: pointer;
+        }
+        
+        .NavMobileHamburger {
+            cursor: pointer;
+            height: 50px;
+            padding-top: 14px;
+            position: relative;
+            width: 50px;
+        }
+        
+        .NavMobileHamburger:after,
+        .NavMobileHamburger:before {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            border-top: 2px solid rgba(255, 255, 255, 0.5);
+            content: "";
+            display: block;
+            height: 12px;
+            margin: 0 auto;
+            width: 30px;
+        }
+        
+        .NavMobileHamburger:after {
+            border-top: none;
+            height: 10px;
+        }
+        
+        .NavMobileHamburger:hover:after,
+        .NavMobileHamburger:hover:before {
+            border-color: rgb(243, 237, 237);
+        }
+        
+        @media only screen and (min-width: 568px) {
+            .NavMobileHamburger,
+            .NavMobileToggle {
+                display: none;
+            }
+            .NavMobile ul {
+                display: block;
+            }
+        }
+        
+        .alert_color {
+            font-style: italic;
+            color: #e06d69;
+        }
+        
+        a.recover {
+            margin: 12px;
+        }
+        
+        .polygon {
+            pointer-events: none;
+        }
+        
+        #box2 {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+        }
+        
+        #box1 {
+            width: 100%;
+            height: 293px;
+            margin-left: 33%;
+            font-family: inherit;
+            font-size: 100%;
+            margin: 90px;
+            margin-left: 35%;
+            line-height: 1.15;
+        }
+        
+        .text {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: inset 0 1px 3px #ddd;
+            color: #222;
+            display: block;
+            font-family: inherit;
+            padding: 8px 10px;
+            font-family: inherit;
+            font-size: 100%;
+            line-height: 1.15;
+            width: 40%;
+        }
+        
+        label {
+            display: inline-block;
+            margin: 10px 0 5px;
+        }
+        
+        body {
+            background-color: #262626;
+            font-family: Open Sans, sans-serif;
+            color: #E6E6E6;
+        }
+        
+        * {
+            font-family: Open Sans, sans-serif;
+            color: #E6E6E6;
+        }
+        
+        #title {
+            color: #E6E6E6;
+            padding: 40px;
+            max-width: 78%;
+            align-items: center;
+            align-content: center;
+            margin: auto;
+            margin-top: -20px;
+        }
+        
+        #title h1 {
+            float: left;
+            font-size: 36px;
+            line-height: 1.5;
+        }
+        
+        #title input {
+            float: right;
+            line-height: 1.15;
+            border-radius: 4px;
+            color: #fff;
+            width: 250px;
+            border: none;
+            background: #3e3e3e;
+            margin: 30px 0 20px;
+            padding: 10px;
+        }
+        
+        #taskbar {
+            clear: both;
+            background-color: #141414;
+            width: 100%;
+        }
+        
+        .course-nav {
+            background-color: #141414;
+            padding: 2px;
+            margin-left: 13%;
+        }
+        
+        .course-nav a {
+            background-color: #141414;
+            color: #e6e6e6a2;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px;
+        }
+        
+        .course-nav a:nth-child(1) {
+            background-color: rgb(10, 87, 163);
+            color: #fff;
+        }
+        
+        .course-nav>a:focus {
+            background-color: rgb(10, 87, 163);
+            color: white;
+        }
+        
+        .course-nav>a:hover {
+            color: #fff;
+        }
+        
+        #course-content {
+            margin: auto;
+            margin-top: 2%;
+            display: grid;
+            gap: 3%;
+            max-width: 75%;
+            grid-template-columns: repeat(2, 50%);
+        }
+        
+        .course-box {
+            background-image: url("https://static.frontendmasters.com/assets/courses/2021-08-04-intermediate-typescript/thumb.webp");
+            background-size: contain;
+            margin: 10px;
+            max-width: 100%;
+            transition: opacity 2s;
+            transition: opacity 1s;
+            height: 100%;
+            opacity: .7;
+        }
+        
+        .course-box:nth-child(2) {
+            background-image: url("https://static.frontendmasters.com/assets/courses/2021-07-20-node-js-v2/thumb.webp");
+        }
+        
+        .course-box:nth-child(3) {
+            background-image: url("https://static.frontendmasters.com/assets/courses/2021-07-06-computer-science-v2/thumb.webp");
+        }
+        
+        .course-box:nth-child(4) {
+            background-image: url("https://static.frontendmasters.com/assets/courses/2021-06-15-redux-fundamentals/thumb.webp");
+        }
+        
+        .course-box:nth-child(5) {
+            background-image: url("https://static.frontendmasters.com/assets/courses/2021-06-08-accessibility-v2/thumb.webp");
+        }
+        
+        .course-box:nth-child(6) {
+            background-image: url("https://static.frontendmasters.com/assets/courses/2021-08-03-typescript-v3/thumb.webp");
+        }
+        
+        .cont {
+            width: 85%;
+            height: 100%;
+            float: right;
+            background-color: black;
+            background: radial-gradient(circle at left, rgba(0, 0, 0, .6) 0, #000 25%);
+        }
+        
+        .img-name {
+            display: flex;
+            max-width: 60%;
+            margin: 5%;
+        }
+        
+        .img-name>img {
+            max-width: 35%;
+            max-height: 35%;
+            border-radius: 50%;
+        }
+        
+        .img-name>div {
+            margin: 8% 8%;
+            font-size: 18px;
+        }
+        
+        .img-name>div>span {
+            color: #8a8a8a;
+            font-size: 16px;
+        }
+        
+        .discription {
+            max-width: 95%;
+            margin: auto;
+            line-height: 1.4;
+            font-family: Open Sans, sans-serif;
+            font-size: 16px;
+            margin-top: -10px;
+        }
+        
+        .info>div:nth-child(4) {
+            color: #8a8a8a;
+            padding: 1%;
+            max-width: 95%;
+            margin: auto;
+            font-size: 14px;
+            margin-top: -3%;
+        }
+        
+        .info>div:nth-child(4)>strong {
+            border-radius: 10px;
+            padding: 5px;
+            color: black;
+            background-color: #8a8a8a;
+            line-height: 1.5;
+            font-family: Open Sans, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            background: #8a8a8a;
+            margin-left: 5px;
+        }
+        
+        .course-btns {
+            margin-top: 7%;
+            margin-left: 3%;
+            margin-bottom: 6%;
+            font-size: 16px;
+            line-height: 1.5;
+            font-family: Open Sans, sans-serif;
+            color: #e6e6e6;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+        
+        .course-btns>a:nth-child(1) {
+            background-color: tomato;
+            border-radius: 20px;
+            text-decoration: none;
+            border: none;
+            color: #fff;
+            text-align: center;
+            background: #c02d28;
+            font-size: 14px;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        
+        .course-btns>a:nth-child(2) {
+            background-color: orange;
+            border-radius: 20px;
+            color: #E6E6E6;
+            text-decoration: none;
+            background: #c94f17;
+            border: none;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            padding: 10px 20px;
+            margin: 10px 0 0;
+        }
+        
+        .info>h2 {
+            color: #e05c58;
+            font-size: 27px;
+            margin-left: 15px;
+        }
+        
+        .info>h2>a {
+            text-decoration: none;
+            color: #e05c58;
+            font-weight: 100;
+        }
+        
+        .info>h2>a:hover {
+            color: #f77873;
+        }
+        
+        .course-box:hover {
+            opacity: 1;
+        }
+        /* particular page css */
+        
+        #title-course {
+            display: flex;
+            max-width: 75%;
+            max-height: 230px;
+            margin: auto;
+            margin-top: 2%;
+        }
+        
+        #title-course>img {
+            max-width: 20%;
+            max-height: 200px;
+        }
+        
+        #title-course>div {
+            flex-grow: 2;
+            margin-left: 2%;
+        }
+        
+        #title-course>div>h2 {
+            font-weight: 400;
+            line-height: 1.2;
+            font-size: 36px;
+            padding: 0%;
+            margin: 0%;
+            margin-top: 0%;
+        }
+        
+        #title-course>div>h2+div {
+            margin: 0%;
+            margin-top: 1.5%;
+            max-width: 35%;
+        }
+        
+        #title-course>div>h2+div>div {
+            margin-left: 3%;
+        }
+        
+        #title-course>div>:nth-child(3) {
+            color: #8a8a8a;
+            padding: 1%;
+            padding-left: 0%;
+            max-width: 95%;
+            font-size: 16px;
+            margin: 0%;
+        }
+        
+        #title-course>div>:nth-child(3)>strong {
+            border-radius: 10px;
+            padding: 5px;
+            color: black;
+            background-color: #8a8a8a;
+            line-height: 1.5;
+            font-family: Open Sans, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            background: #8a8a8a;
+            margin-left: 5px;
+        }
+        
+        .content-prev {
+            max-width: 100%;
+            background-color: black;
+            margin-top: 1.5%;
+        }
+        
+        .content-prev>div {
+            background-color: black;
+            display: flex;
+            max-width: 75%;
+            margin: auto;
+        }
+        
+        .Sample-video {
+            flex-grow: 1;
+            flex-basis: 100%;
+        }
+        
+        .Sample-video>iframe {
+            padding: 2%;
+            margin-left: -10px;
+            width: 550px;
+            height: 350px;
+            border: none;
+        }
+        
+        .prev-discription {
+            flex-grow: 1;
+            margin-left: 3%;
+            margin-top: 0.5%;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .prev-discription>div {
+            color: #8a8a8a;
+            font-weight: 400;
+            margin-bottom: 90px;
+        }
+        
+        .watch-button {
+            text-decoration: none;
+            border: none;
+            border-radius: 40px;
+            color: #fff;
+            line-height: 1.25;
+            text-align: center;
+            background: #c02d28;
+            font-size: 19px;
+            padding: 20px 140px;
+            margin: 3%;
+            margin-top: 50%;
+        }
+        
+        #table-cont {
+            max-width: 75%;
+            margin: auto;
+            margin-top: 1%;
+        }
+        
+        #table-cont>h2 {
+            line-height: 1.5;
+            font-size: 27px;
+            font-weight: bold;
+        }
+        
+        .content {
+            padding-top: 1%;
+        }
+        
+        #table-cont>a {
+            text-decoration: none;
+        }
+        
+        .content>h3 {
+            font-weight: 600;
+            border-bottom: 1px solid #4e4e4e;
+            color: #aaa;
+            margin: 20px 0;
+            padding-bottom: 5px;
+            font-size: 21px;
+            line-height: 1.5;
+        }
+        
+        .main-content {
+            display: flex;
+            opacity: 0.9;
+            transition: opacity 0s;
+        }
+        
+        .main-content:hover {
+            opacity: 1;
+        }
+        
+        .main-content>img {
+            width: 10%;
+            height: 10%;
+        }
+        
+        .main-content>div {
+            margin-left: 1%;
+        }
+        
+        .main-content>div>div>h4 {
+            color: #e66225;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 0;
+        }
+        
+        .main-content>div>div>div {
+            color: #e66225;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 0;
+            float: right;
+        }
+        
+        .main-content>div>p {
+            margin: 0%;
+            margin-top: 0.5%;
+            line-height: 1.5;
+            color: #aaa;
+            font-size: 14px;
+        }
+        /* popular Courses */
+        
+        #popular-main {
+            display: none;
+            max-width: 75%;
+            margin: 2% auto;
+            gap: 2%;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+        }
+        
+        #popular-main>div {
+            display: flex;
+            max-width: 100%;
+            height: 330px;
+        }
+        
+        #popular-main>div>img {
+            width: 35%;
+            height: 100%;
+            flex-grow: 1;
+            opacity: 0.4;
+            transition: opacity 2s;
+        }
+        
+        #popular-main>div>img:hover {
+            opacity: 1;
+        }
+        
+        #popular-main>div>div>h2 {
+            line-height: 1.5;
+            font-size: 27px;
+            font-weight: 400;
+            box-sizing: border-box;
+            color: #dd625e;
+            transition: color .2s;
+        }
+        
+        #popular-main>div>div>h2:hover {
+            color: #f0635e;
+        }
+        
+        #popular-main>div>div {
+            flex-grow: 2;
+            background-color: black;
+            padding-left: 2%;
+            margin: 0%;
+            height: 100%;
+        }
+        
+        .author-name {
+            display: flex;
+            max-width: 30%;
+            max-height: 30%;
+            margin: 0%;
+            margin-top: -20px;
+        }
+        
+        .author-name>img {
+            max-width: 35%;
+            max-height: 35%;
+            border-radius: 50%;
+        }
+        
+        .author-name>div {
+            margin: 8% 6%;
+            font-size: 18px;
+        }
+        
+        .author-name>div>span {
+            color: #8a8a8a;
+            font-size: 16px;
+        }
+        
+        .author-name+p {
+            line-height: 1.5;
+            font-size: 14px;
+            margin: 10px 0;
+            padding-right: 3%;
+        }
+        
+        #popular-main>div>div>p+div {
+            line-height: 1.5;
+            color: #8a8a8a;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        
+        #popular-main>div>div>p+div>strong {
+            border-radius: 8px;
+            padding: 3px;
+            color: black;
+            background-color: #8a8a8a;
+            line-height: 1.5;
+            font-family: Open Sans, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            background: #8a8a8a;
+            margin-left: 2px;
+        }
+        
+        .course-btn {
+            margin-top: 7%;
+            margin-left: 0%;
+            margin-bottom: 8%;
+            font-size: 16px;
+            line-height: 1.5;
+            font-family: Open Sans, sans-serif;
+            color: #e6e6e6;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+        
+        .course-btn>a:nth-child(1) {
+            background-color: tomato;
+            border-radius: 20px;
+            text-decoration: none;
+            border: none;
+            color: #fff;
+            text-align: center;
+            background: #c02d28;
+            font-size: 14px;
+            padding: 10px 30px;
+            text-decoration: none;
+        }
+        
+        .course-btn>a:nth-child(2) {
+            background-color: orange;
+            border-radius: 20px;
+            color: #E6E6E6;
+            text-decoration: none;
+            background: #c94f17;
+            border: none;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            padding: 10px 25px;
+            margin: 10px 8px;
+        }
+        /* search */
+        
+        .pop-main {
+            display: grid;
+            max-width: 75%;
+            margin: 2% auto;
+            gap: 2%;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+        }
+        
+        .pop-main>div {
+            display: flex;
+            max-width: 100%;
+            height: 330px;
+        }
+        
+        .pop-main>div>img {
+            width: 32%;
+            height: 100%;
+            flex-grow: 1;
+            opacity: 0.4;
+            transition: opacity 2s;
+        }
+        
+        .pop-main>div>img:hover {
+            opacity: 1;
+        }
+        
+        .pop-main>div>div>h2 {
+            line-height: 1.5;
+            font-size: 27px;
+            font-weight: 400;
+            box-sizing: border-box;
+            color: #dd625e;
+            transition: color .2s;
+        }
+        
+        .pop-main>div>div>h2:hover {
+            color: #f0635e;
+        }
+        
+        .pop-main>div>div {
+            flex-grow: 2;
+            background-color: black;
+            padding-left: 2%;
+            margin: 0%;
+            height: 100%;
+        }
+        
+        .pop-main>div>div>p+div {
+            line-height: 1.5;
+            color: #8a8a8a;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        
+        .pop-main>div>div>p+div>strong {
+            border-radius: 8px;
+            padding: 3px;
+            color: black;
+            background-color: #8a8a8a;
+            line-height: 1.5;
+            font-family: Open Sans, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            background: #8a8a8a;
+            margin-left: 2px;
+        }
+        
+        .author {
+            display: flex;
+            max-width: 40%;
+            max-height: 30%;
+            margin: 0%;
+            margin-top: -20px;
+        }
+        
+        .author>img {
+            max-width: 30%;
+            max-height: 30%;
+            border-radius: 50%;
+        }
+        
+        .author>div {
+            margin: 8% 6%;
+            font-size: 18px;
+        }
+        
+        .author>div>span {
+            color: #8a8a8a;
+            font-size: 16px;
+        }
+        
+        .author+p {
+            line-height: 1.5;
+            font-size: 14px;
+            margin: 10px 0;
+            padding-right: 3%;
+        }
+        
+        .addtobtn {
+            position: relative;
+            top: -30px;
+            right: -150px;
+            border-radius: 50%;
+            height: 35px;
+            margin-left: 8px;
+            border: none;
+            background-color: black;
+        }
+        
+        .addtobtn:focus {
+            background-color: tomato;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <header class="header">
+        <div class="inner">
+            <div class="wraps">
+                <div class="logos"><a class="s-tr" href="home">FrontendMasters</a></div>
+
+
+                <label class="NavMobileHamburger" for="open-nav-main">Menu</label>
+
+
+
+                <nav class="Nav NavMobile NavMain"><input class="toggle-target" id="open-nav-main" type="checkbox">
+                    <ul id="top">
+                        <li class="items"><a href="courses">Courses</a></li>
+                        <li class="items"><a href="learn">Learn</a></li>
+                        <li class="items"><a href="register">Pricing</a></li>
+                        <li class="items"><a onclick="login()" id="login" href="login">Login</a></li>
+
+                        <li class="items"><a onclick="signup()" class="Button ButtonRed" href="register">Join Now</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <svg class="polygon" viewbox="0 0 100 10" preserveaspectratio="none">
+        <defs>
+            <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#c02d28"></stop>
+                <stop offset="100%" stop-color="#e66225"></stop>
+            </linearGradient>
+        </defs>
+        <polygon points="0,2 0,0 100,0 100,10" fill="url(#linear)"></polygon>
+    </svg>
+    </header>
+
+
+
+    <!-- header -->
+
+
+
+
+    <div id="title">
+        <h1>Frontend Master Courses</h1>
+
+        <input id="search" type="text" placeholder="Type to search..." />
+    </div>
+    <div id="taskbar">
+        <nav class="course-nav">
+            <a id="aCourse" href="#">All Courses</a>
+            <a id="pCourse" href="#">Popular Courses</a>
+            <a id="lCourse" href="#">Learning Paths</a>
+            <a id="dCourse" href="/bookmarks">Bookmarks</a>
+        </nav>
+    </div>
+
+
+
+
+    <div id="popular-main">
+        <% course.forEach((product)=> {%>
+
+
+
+            <div>
+
+                <div style="display: none;" onclick="bookmark_id()" id="getBookmark">
+                    <%=product._id%>
+                </div>
+
+
+                <img src=<%=product.backgroundImage %> />
+
+
+                <div>
+                    <h2>
+                        <%=product.title %>
+                    </h2>
+                    <div class="author-name">
+                        <img src=<%=product.authorImage %> alt="Brain" />
+                        <div>
+                            <%=product.authorName%><span><br> Stripe</span> </div>
+                    </div>
+                    <p>
+                        <%=product.description%>
+                    </p>
+                    <div>
+                        <%product.duration%>
+                            <Strong>CC</Strong>
+                    </div>
+                    <div class="course-btn">
+
+                        <a href="particularCourse.html">Watch Free Preview</a>
+                        <a href="#">Get Full Access</a>
+                        <form action="/bookmarks" method="POST">
+                            <input style="visibility: hidden;" type="text" name="courseId" value="<%=product._id%>">
+                            <button class="addtobtn" style="color: #000;" type="submit" name="" value=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16">
+                                <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5V4z"/>
+                                <path d="M4.268 1A2 2 0 0 1 6 0h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L13 13.768V2a1 1 0 0 0-1-1H4.268z"/>
+                              </svg>
+                              
+                              </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <% }) %>
+    </div>
+
+
+
+
+    <div id="course-content">
+        <% course.forEach((product)=> {%>
+            <div style=" background-image: url('<%=product.backgroundImage%>');
+                background-size: contain;
+                margin: 10px;
+                max-width: 100%;
+                transition: opacity 2s;
+                transition: opacity 1s;
+                height: 100%;
+                opacity: .7;">
+
+
+                <div class="cont">
+
+                    <div class="info">
+                        <h2>
+                            <a href="#">
+                                <%=product.title%>
+                            </a>
+                        </h2>
+                        <div class="img-name">
+                            <img src=<%=product.authorImage%> alt="scott moss" />
+                            <div>
+                                <%=product.authorName%> <span><br><%=product.company%></span>
+
+                            </div>
+                        </div>
+                        <div class="discription">
+                            <p>
+                                <%=product.description%>
+                            </p>
+                        </div>
+                        <div>
+                            <%=product.duration%>
+                                <Strong>CC</Strong>
+                        </div>
+                    </div>
+                    <div class="course-btns">
+                        <a href="particularCourse.html">Watch Free Preview</a>
+                        <a href="#">Get Full Access</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <% }) %>
+
+    </div>
+
+
+
+
+
+
+    <!-- Footer -->
+
+
+    <div id="box2">
+
+
+
+
+        <footer role="contentinfo" class="FooterMain">
+            <div class="wraps">
+                <div class="row">
+                    <div class="logos"><a class="s-tr" href="/">FrontendMasters</a></div>
+
+                    <nav class="Nav NawvMobile NavFooter">
+
+                        <ul>
+                            <li class="items"><a href="courses.html">Courses</a></li>
+                            <li class="items"><a href="#">Learn</a></li>
+                            <li class="items"><a href="#">Teachers</a></li>
+                            <li class="items"><a href="#">Guides</a></li>
+                            <li class="items"><a href="#">Pricing</a></li>
+                            <li class="items"><a onclick="login()">Login</a></li>
+                            <li class="items"><a onclick="signup()">Join Now</a></li>
+                            <li class="items"><a href="#">FAQ</a></li>
+                        </ul>
+                    </nav>
+
+
+                    <div class="app">
+                        <img src="https://developer.apple.com/assets/elements/icons/download-on-the-app-store/download-on-the-app-store.svg" width="150px" height="70px">
+                        <a id="" class="Android"></a> <img class="app" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" height="65">
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="twitter">
+                        <img src="https://image.flaticon.com/icons/png/128/733/733579.png" width="40px" height="40px" class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/174/174857.png" width="40px" height="40px" class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/733/733547.png" width="40px" height="40px" class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/1409/1409946.png" width="40px" height="40px" class="imageGap">
+                        <p class="email">Email: <a href="">support@frontendmasters.com</a></p>
+
+                    </div>
+                    <div class="copyright">© 2021 Frontend Masters &middot;
+                        <a href="https://static.frontendmasters.com/assets/legal/MasterServicesAgreement.pdf">Terms of
+                        Service</a> &middot; <a href="https://static.frontendmasters.com/assets/legal/PrivacyPolicy.pdf">Privacy Policy</a>
+
+                    </div>
+                    <div class="end1">Frontend Masters is proudly made in Minneapolis, MN</div>
+
+
+                </div>
+            </div>
+    </div>
+
+    <script>
+        function bookmark_id() {
+            alert("hello")
+            let n = document.getElementById("getBookmark").innerText;
+            console.log(n)
+        }
+
+
+
+        let aCourse = document.getElementById("aCourse");
+        let pCourse = document.getElementById("pCourse");
+        let lCourse = document.getElementById("lCourse");
+        let content = document.getElementById("course-content");
+        let pop = document.getElementById("popular-main");
+        let val = document.getElementById("search");
+        let body = document.querySelector("body");
+        let popdiv = document.createElement("div");
+
+        function backgroundChange() {
+            aCourse.style.background = "none";
+            aCourse.style.color = "#e6e6e6a2";
+            content.style.display = "none";
+
+        }
+
+        function allCourse() {
+            aCourse.style.background = "rgb(" + 10 + "," + "87" + "," + 163 + ")";
+            aCourse.style.color = "white";
+            content.style.display = "grid";
+            popdiv.style.display = "none";
+            pop.style.display = "none";
+        }
+
+
+        pCourse.addEventListener("click", backgroundChange);
+        lCourse.addEventListener("click", backgroundChange);
+        aCourse.addEventListener("click", allCourse);
+
+
+        function popularCourse() {
+
+            pop.style.display = "grid";
+
+        }
+        pCourse.addEventListener("click", popularCourse);
+
+
+        let a = [{
+            id: "html",
+            image: "https://static.frontendmasters.com/assets/courses/2019-11-06-html-email-v2/thumb.webp",
+            heading: "HTML Email Development, v2",
+            profile: "https://static.frontendmasters.com/assets/teachers/rodriguez/thumb.webp",
+            name: "Jason Rodriguez <span><br> Litmus</span>",
+            info: "Learn the foundations of HTML email development such as structure, semantic markup, layouts, and creating accessible email.",
+            time: "3 hours,56 minutes <Strong> CC </Strong>",
+            btn1: "Watch Free Preview",
+            btn2: "Get Full Access"
+
+
+        }, {
+            id: "css",
+            image: "https://static.frontendmasters.com/assets/courses/2018-01-31-css-in-depth-v2/thumb.webp",
+            heading: "CSS In-Depth, v2",
+            profile: "https://static.frontendmasters.com/assets/teachers/weyl/thumb.webp",
+            name: "Estelle Weyl <span><br> Mozilla Developer Network</span>",
+            info: "Take a deep-dive into the essential features of CSS, while also exploring CSS features you probably didn’t even know existed!",
+            time: "10 hours,26 minutes <Strong> CC </Strong>",
+            btn1: "Watch Free Preview",
+            btn2: "Get Full Access"
+
+        }, {
+            id: "javascript",
+            image: "https://static.frontendmasters.com/assets/courses/2020-11-18-monorepos/thumb.webp",
+            heading: "JavaScript and TypeScript Monorepos",
+            profile: "https://static.frontendmasters.com/assets/teachers/north/thumb.webp",
+            name: "Mike North <span><br> LinkdIn</span>",
+            info: "Monorepos have taken the JavaScript world by storm, unlocking powerful new patterns around composition, encapsulation, and ease of maintenance.",
+            time: "3 hours,46 minutes <Strong> CC </Strong>",
+            btn1: "Watch Free Preview",
+            btn2: "Get Full Access"
+
+        }, {
+            id: "react",
+            image: "https://static.frontendmasters.com/assets/courses/2021-06-15-redux-fundamentals/thumb.webp",
+            heading: "Redux Fundamentals (feat. React)",
+            profile: "https://static.frontendmasters.com/assets/teachers/kinney/thumb.webp",
+            name: "Steve Kinney <span><br> Twilio</span>",
+            info: "Learn the Redux API from scratch, then learn to hook Redux into a React application. Also learn how to extend Redux with various tools from its ecosystem, including Reselect, Immer, and Redux Toolkit, to reduce boilerplate and speed up your development!",
+            time: "4 hours,41 minutes <Strong> CC </Strong>",
+            btn1: "Watch Free Preview",
+            btn2: "Get Full Access"
+        }, {
+            id: "vue",
+            image: "https://static.frontendmasters.com/assets/courses/2021-02-18-production-vue/thumb.webp",
+            heading: "Production-Grade Vue.js",
+            profile: "https://static.frontendmasters.com/assets/teachers/hong/thumb.webp",
+            name: "Ben Hong <span><br> Netlify</span>",
+            info: "Learn component design patterns, workflows to enhance productivity, testing methodologies, state management, routing, best practices for architecting increasingly complex applications, and more.",
+            time: "4 hours,37 minutes <Strong> CC </Strong>",
+            btn1: "Watch Free Preview",
+            btn2: "Get Full Access"
+        }];
+
+        let store = localStorage.setItem("content", JSON.stringify(a));
+        let get_store = JSON.parse(localStorage.getItem("content"));
+
+
+        function search() {
+
+            let indiv = document.createElement("div");
+            let img = document.createElement("img");
+            let contdiv = document.createElement("div");
+            let heading = document.createElement("h2")
+            let profile_div = document.createElement("div");
+            let profile_img = document.createElement("img");
+            let trainer = document.createElement("div");
+            let content_info = document.createElement("p");
+            let duration = document.createElement("div");
+            let button_div = document.createElement("div");
+            let button1 = document.createElement("a");
+            let button2 = document.createElement("a");
+
+
+            get_store.forEach(function(p) {
+
+                if (val.value == p.id) {
+                    // hoisting
+                    img.src = p.image;
+                    heading.innerHTML = p.heading;
+                    profile_img.src = p.profile;
+                    trainer.innerHTML = p.name;
+                    content_info.innerHTML = p.info;
+                    duration.innerHTML = p.time;
+                    button1.innerHTML = p.btn1;
+                    button2.innerHTML = p.btn2;
+                    button1.href = "particularCourse.html";
+
+                    // execution
+
+                    button_div.append(button1, button2);
+                    button_div.setAttribute("class", "course-btn");
+
+                    profile_div.append(profile_img, trainer);
+                    profile_div.setAttribute("class", "author");
+
+                    contdiv.append(heading, profile_div, content_info, duration, button_div)
+                    indiv.append(img, contdiv);
+                    popdiv.append(indiv);
+                    popdiv.setAttribute("class", "pop-main");
+                    body.insertBefore(popdiv, pop);
+                    content.style.display = "none";
+                    pop.style.display = "none";
+                    popdiv.style.display = "grid";
+
+                } else if (val.value == "") {
+                    popdiv.innerHTML = null;
+
+                    content.style.display = "grid";
+
+                }
+
+
+            });
+
+
+        }
+
+        val.addEventListener("input", search);
+
+
+
+        var user = document.getElementById("login");
+        let x = localStorage.getItem("looger");
+        console.log(x);
+
+        user.innerHTML = x;
+    </script>
+</body>
+
+</html>
