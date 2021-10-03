@@ -8,7 +8,7 @@ Frontend Masters is an Edtech Website that lets users take courses related to fr
 + [Aniket Tiwari](https://github.com/aniketT23)
 + [Dhruv Kumar Agarwal](https://github.com/Dhruvkagrawal)
 + [Shashank Borkar](https://github.com/ShashankSKB)
-+ [Aishwarya Jadhav](https://github.com/aishwaryaj20)
++ [Utkarsh Nagar](https://github.com/utkarsh79)
 
 ----
 ## Tech Stack
@@ -17,6 +17,10 @@ The tech Stack we used for creating this webiste are:-
 + HTML
 + CSS
 + Javascript
++ MongoDB
++ EJS
++ Express
++ Node.js
 
 ## Landing Page
 ----
@@ -27,11 +31,12 @@ We have designed the carousel  functionality of twitter using javascript as assi
 ## Pricing Page
 ----
 The pricing page consist of various subscription according to yearly,monthly and teams and the payment module changes according to that, as if you choose the indivisiual pricing it will show the pricing for that and same for others packages, the pricing page is also the signup part for the frontend master as without paying up the price you can only access the preview part of the courses.
+We create the api for the Pricing Page so that after user fill their basic details their data is posted to our mongo sever, so that we can fetch and validate their data at the time of login process.
 ![landing page](https://github.com/aniketT23/Fronend-Masters/blob/master/img/Screenshot%202021-08-29%20at%2017-44-30%20Document.png "Logo Title Text 1")
 
 ## Login Page
 ----
-After the sucessfull complition of the signup, your email, username and password is stored in the local storage and you can login with that credintials as, if the email ID and password are incorrect it will fail the vailidation and you cannot login in the website.
+After the sucessfull complition of the signup, your email, username and password is stored in the local storage and you can login with that credintials as, if the email ID and password are incorrect it will fail the vailidation and you cannot login in the website.All the user data are fetched from the monog server which we created for the signup of users.
 ![landing page](https://github.com/aniketT23/Fronend-Masters/blob/master/img/login.JPG  "Logo Title Text 1")
 
 ## Courses Page
