@@ -7,7 +7,7 @@ async function validate() {
 var logger = document.getElementById("login");
 var x = {};
 
-let me = localStorage.setItem("looger", "");
+let me = localStorage.setItem("looger", "login");
 async function login() {
     var user = document.getElementById("username").value;
     var pass = document.getElementById("password").value;
