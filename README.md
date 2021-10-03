@@ -46,6 +46,6 @@ In the courses page user can see the various courses provided by the frontend ma
 
 ## For accessing the project
 ---
-Download the project repo and open the Index.html file in the browser or you can directly:-
+Download the project repo and open the src folder and run the server.js file after that you can call **http://localhost:2230/home** for viewing the flow of the website or you can directly:-
 ### [Click Here!](https://anikett23.github.io/Fronend-Masters/)
 
