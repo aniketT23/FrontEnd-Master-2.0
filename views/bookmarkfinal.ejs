@@ -650,7 +650,7 @@
             padding: 8px;
         }
         
-        .course-nav a:nth-child(1) {
+        .course-nav a:nth-child(4) {
             background-color: rgb(10, 87, 163);
             color: #fff;
         }
@@ -1259,8 +1259,11 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            margin: 10px;
+            margin: 10px auto;
             gap: 15px;
+            width: 75%;
+            height: 310px;
+            background-color: #000;
         }
         
         .bg {
@@ -1304,7 +1307,24 @@
     </svg>
     </header>
 
-    <h2>BOOKMARKS</h2>
+    <div id="title">
+        <h1>Frontend Master Courses</h1>
+
+        <input id="search" type="text" placeholder="Type to search..." />
+    </div>
+
+    <div id="taskbar">
+        <nav class="course-nav">
+            <a href="courses">All Courses</a>
+            <a href="#">Popular Courses</a>
+            <a href="#">Learning Paths</a>
+            <a href="/bookmarks">Bookmarks</a>
+        </nav>
+    </div>
+
+
+
+
     <div id="Bookmark">
         <% bookmark.forEach((product)=> {%>
 

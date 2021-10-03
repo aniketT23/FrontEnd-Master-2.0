@@ -1249,6 +1249,21 @@
             margin: 10px 0;
             padding-right: 3%;
         }
+        
+        .addtobtn {
+            position: relative;
+            top: -30px;
+            right: -150px;
+            border-radius: 50%;
+            height: 35px;
+            margin-left: 8px;
+            border: none;
+            background-color: black;
+        }
+        
+        .addtobtn:focus {
+            background-color: tomato;
+        }
     </style>
 
 </head>
@@ -1350,7 +1365,12 @@
                         <a href="#">Get Full Access</a>
                         <form action="/bookmarks" method="POST">
                             <input style="visibility: hidden;" type="text" name="courseId" value="<%=product._id%>">
-                            <input style="color: #000; margin: -50px 150px;" type="submit" name="Bookmark" value="Bookmark">
+                            <button class="addtobtn" style="color: #000;" type="submit" name="" value=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16">
+                                <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5V4z"/>
+                                <path d="M4.268 1A2 2 0 0 1 6 0h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L13 13.768V2a1 1 0 0 0-1-1H4.268z"/>
+                              </svg>
+                              
+                              </button>
                         </form>
                     </div>
                 </div>
