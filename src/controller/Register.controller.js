@@ -55,6 +55,13 @@ router.get("/dashboard", async(req, res) => {
     })
 })
 
+router.get("/particular", async(req, res) => {
+    const users = await Users.find().lean().exec();
+    res.render("particular.ejs", {
+        users: users
+    })
+})
+
 router.get("/learn", async(req, res) => {
 
     res.render("learn.ejs")

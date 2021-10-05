@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript</title>
+    <link rel="stylesheet" type="text/css" href="courses.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="inner">
+            <div class="wraps">
+                <div class="logos"><a class="s-tr" href="home">FrontendMasters</a></div>
+
+
+                <label class="NavMobileHamburger" for="open-nav-main">Menu</label>
+
+
+
+                <nav class="Nav NavMobile NavMain"><input class="toggle-target" id="open-nav-main" type="checkbox">
+                    <ul>
+                        <li class="items"><a href="courses">Courses</a></li>
+                        <li class="items"><a href="courses">Learn</a></li>
+                        <li class="items"><a href="register">Pricing</a></li>
+                        <li class="items"><a onclick="login()" id="login" href="login">Login</a></li>
+                        <!-- <li class="items"><a onclick="signup()" class="Button ButtonRed" href="">Join Now</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <svg class="polygon" viewbox="0 0 100 10" preserveaspectratio="none">
+        <defs>
+            <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#c02d28"></stop>
+                <stop offset="100%" stop-color="#e66225"></stop>
+            </linearGradient>
+        </defs>
+        <polygon points="0,2 0,0 100,0 100,10" fill="url(#linear)"></polygon>
+    </svg>
+    </header>
+
+
+
+
+
+
+    <!-- end header -->
+    <div id="title-course">
+        <img src="https://static.frontendmasters.com/assets/courses/2021-08-04-intermediate-typescript/thumb.webp" alt="typescript" />
+        <div>
+            <h2>Intermediate TypeScript</h2>
+            <div class="img-name ">
+                <img src="https://static.frontendmasters.com/assets/teachers/north/thumb.webp" alt="Mike North" />
+                <div>Mike North <span><br> LinkedIn</span>
+                </div>
+            </div>
+            <div>
+                2 hours,48 minutes
+                <Strong>CC</Strong>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content-prev">
+        <div>
+            <div class="Sample-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Q1owo3t6CZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </iframe>
+            </div>
+            <div class="prev-discription">
+                <p>
+                    Learn to type some of the more tricky TypeScript challenges found in large codebases, such as declaration files, generics, and transforming types. You’ll learn to keep yourself and your team unblocked by learning to diagnose common problems quickly. By
+                    taking this course, you'll grow from being a contributor to a TypeScript codebase to being on the path to becoming "the TypeScript expert" for your team.
+                </p>
+                <p>
+                    This course and others like it are available as part of our Frontend Masters video subscription.
+                </p>
+                <div>
+                    Published: August 4, 2021
+                </div>
+                <a class="watch-button" href="#">
+              Watch Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="table-cont">
+        <h2>Table of Contents</h2>
+        <a href="#">
+            <div class="content">
+                <h3>Introduction</h3>
+
+                <div class="main-content">
+                    <img src="https://static.frontendmasters.com/thumb/savage-a/2021/08/04/1-90.jpg" alt="demo1" />
+                    <div>
+                        <div>
+                            <div>00:00:00 - 00:04:16</div>
+                            <h4>Introduction</h4>
+
+                        </div>
+                        <p>Mike North introduces the course by discussing goals of this course, prerequisites, and a brief workshop setup. A brief overview of other TypeScript courses on Frontend Masters and their relation to this course is also provided
+                            in this segment.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="#">
+            <div class="content">
+                <h3>Code Infrastructure</h3>
+
+                <div class="main-content">
+                    <img src="https://static.frontendmasters.com/thumb/savage-a/2021/08/04/1-90.jpg" alt="demo1" />
+                    <div>
+                        <div>
+                            <div>00:04:17 - 00:14:59</div>
+                            <h4>Declaration Merging</h4>
+
+                        </div>
+                        <p>Mike discusses stacking types and values on an identifier, how to understand what is attached to an identifier, and what a namespace is. A walk through of applying type and value tests to a class and how classes relate to declaration
+                            merging is also provided in this segment.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="#">
+            <div class="content">
+
+                <div class="main-content">
+                    <img src="https://static.frontendmasters.com/thumb/savage-a/2021/08/04/1-90.jpg" alt="demo1" />
+                    <div>
+                        <div>
+                            <div>00:15:00 - 00:27:07</div>
+                            <h4>Modules & CJS Setup</h4>
+
+                        </div>
+                        <p>Mike discusses ES Module imports and exports, CommonJS Interop, how avoid ECMAScript errors, and importing outside of JavaScript and TypeScript. If the esModuleInterop and allowSyntheticDefaultImports compiler flags are enabled
+                            in order to satisfy ECMAScript errors, anyone who depends on those types will also have to enable them.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="#">
+            <div class="content">
+                <h3>Conditional Types</h3>
+
+                <div class="main-content">
+                    <img src="https://static.frontendmasters.com/thumb/savage-a/2021/08/04/1-90.jpg" alt="demo1" />
+                    <div>
+                        <div>
+                            <div>00:27:08 - 00:35:05</div>
+                            <h4>Type Queries</h4>
+
+                        </div>
+                        <p>Mike discusses how to obtain a type from a value with the type queries keyof and typeof. The query keyof obtains the type representing all property keys on a given interface while typeof extracts a type from a value. An example
+                            for each of these type queries provided in this segment.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="#">
+            <div class="content">
+
+                <div class="main-content">
+                    <img src="https://static.frontendmasters.com/thumb/savage-a/2021/08/04/1-90.jpg" alt="demo1" />
+                    <div>
+                        <div>
+                            <div>00:35:06 - 00:39:50</div>
+                            <h4>Conditional Types</h4>
+
+                        </div>
+                        <p>Mike demonstrates the syntax similarities between JavaScript ternary operators and conditional types. A walk through of each part of a conditional type is also covered in this segment.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="content">
+
+                <div class="main-content">
+                    <img src="https://static.frontendmasters.com/thumb/savage-a/2021/08/04/1-90.jpg" alt="demo1" />
+                    <div>
+                        <div>
+                            <div>00:39:51 - 00:49:06</div>
+                            <h4>Conditional Types Practice</h4>
+
+                        </div>
+                        <p>Mike provides a short exercise to practice with the extends keyword by determining whether a conditional type will evaluate to true or false. A walk through of each example and a student question regarding the modern set theory
+                            limitations are also covered in this segment.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="content">
+
+                <div class="main-content">
+                    <img src="https://static.frontendmasters.com/thumb/savage-a/2021/08/04/1-90.jpg" alt="demo1" />
+                    <div>
+                        <div>
+                            <div>00:49:07 - 00:57:16</div>
+                            <h4>Extract & Exclude</h4>
+
+                        </div>
+                        <p>Mike discusses the built-in utility types Extract and Exclude, walks through an example of each utility type, and describes how each utility type works. Exclude is the opposite of Extract, in that it’s useful for obtaining the
+                            part of a type that’s not assignable to some other type.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+
+
+
+    </div>
+
+    <!-- footer -->
+    <div id="box2">
+
+
+
+
+        <footer role="contentinfo" class="FooterMain">
+            <div class="wraps">
+                <div class="row">
+                    <div class="logos"><a class="s-tr" href="/">FrontendMasters</a></div>
+
+                    <nav class="Nav NawvMobile NavFooter">
+
+                        <ul>
+                            <li class="items"><a href="courses.html">Courses</a></li>
+                            <li class="items"><a href="#">Learn</a></li>
+                            <li class="items"><a href="#">Teachers</a></li>
+                            <li class="items"><a href="#">Guides</a></li>
+                            <li class="items"><a href="#">Pricing</a></li>
+                            <li class="items"><a onclick="login()">Login</a></li>
+                            <li class="items"><a onclick="signup()">Join Now</a></li>
+                            <li class="items"><a href="#">FAQ</a></li>
+                        </ul>
+                    </nav>
+
+
+                    <div class="app">
+                        <img src="https://developer.apple.com/assets/elements/icons/download-on-the-app-store/download-on-the-app-store.svg" width="150px" height="70px">
+                        <a id="" class="Android"></a> <img class="app" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" height="65">
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="twitter">
+                        <img src="https://image.flaticon.com/icons/png/128/733/733579.png" width="40px" height="40px" class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/174/174857.png" width="40px" height="40px" class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/733/733547.png" width="40px" height="40px" class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/1409/1409946.png" width="40px" height="40px" class="imageGap">
+                        <p class="email">Email: <a href="">support@frontendmasters.com</a></p>
+
+                    </div>
+                    <div class="copyright">© 2021 Frontend Masters &middot;
+                        <a href="https://static.frontendmasters.com/assets/legal/MasterServicesAgreement.pdf">Terms of
+                        Service</a> &middot; <a href="https://static.frontendmasters.com/assets/legal/PrivacyPolicy.pdf">Privacy Policy</a>
+
+                    </div>
+                    <div class="end1">Frontend Masters is proudly made in Minneapolis, MN</div>
+
+
+                </div>
+            </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

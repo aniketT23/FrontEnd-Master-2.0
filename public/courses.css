@@ -343,7 +343,7 @@ body {
     text-align: center;
     background: #c02d28;
     font-size: 19px;
-    padding: 20px 140px;
+    padding: 20px 180px;
     margin: 3%;
     margin-top: 50%;
 }
@@ -1268,7 +1268,7 @@ body {
 
 #path_ref {
     max-width: 30%;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 #path_ref>p {

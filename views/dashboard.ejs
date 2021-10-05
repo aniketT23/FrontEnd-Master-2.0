@@ -87,7 +87,7 @@
             </div>
             <div class="dash_cont">
                 <div class="drop_down">
-                    <select name="path" id="path">
+                    <select name="path" id="path" onchange="getComboA(this)">
                         <option value="Beginner Path">Beginner Path</option>
                         <option value="Professional Path">Professional Path</option>
                         <option value="Expert Path">Expert Path</option>
@@ -99,7 +99,7 @@
                         <div></div>
                     </div>
                     <div id="path_ref">
-                        <h1>Beginner </h1>
+                        <h1 id="head">Beginner </h1>
                         <p>
                             Your Path to Becoming a Career-Ready Web Developer!
                         </p>

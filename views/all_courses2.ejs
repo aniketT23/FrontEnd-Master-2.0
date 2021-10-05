@@ -1361,8 +1361,8 @@
                     </div>
                     <div class="course-btn">
 
-                        <a href="particularCourse.html">Watch Free Preview</a>
-                        <a href="#">Get Full Access</a>
+                        <a href="particular">Watch Free Preview</a>
+                        <a href="#">Watch Now</a>
                         <form action="/bookmarks" method="POST">
                             <input style="visibility: hidden;" type="text" name="courseId" value="<%=product._id%>">
                             <button class="addtobtn" style="color: #000;" type="submit" name="" value=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16">
@@ -1420,8 +1420,8 @@
                         </div>
                     </div>
                     <div class="course-btns">
-                        <a href="particularCourse.html">Watch Free Preview</a>
-                        <a href="#">Get Full Access</a>
+                        <a href="particular">Watch Free Preview</a>
+                        <a href="#">Watch Now</a>
                     </div>
 
                 </div>
@@ -1550,7 +1550,7 @@
             info: "Learn the foundations of HTML email development such as structure, semantic markup, layouts, and creating accessible email.",
             time: "3 hours,56 minutes <Strong> CC </Strong>",
             btn1: "Watch Free Preview",
-            btn2: "Get Full Access"
+            btn2: "Watch Now"
 
 
         }, {
@@ -1562,7 +1562,7 @@
             info: "Take a deep-dive into the essential features of CSS, while also exploring CSS features you probably didn’t even know existed!",
             time: "10 hours,26 minutes <Strong> CC </Strong>",
             btn1: "Watch Free Preview",
-            btn2: "Get Full Access"
+            btn2: "Watch Now"
 
         }, {
             id: "javascript",
@@ -1573,7 +1573,7 @@
             info: "Monorepos have taken the JavaScript world by storm, unlocking powerful new patterns around composition, encapsulation, and ease of maintenance.",
             time: "3 hours,46 minutes <Strong> CC </Strong>",
             btn1: "Watch Free Preview",
-            btn2: "Get Full Access"
+            btn2: "Watch Now"
 
         }, {
             id: "react",
@@ -1584,7 +1584,7 @@
             info: "Learn the Redux API from scratch, then learn to hook Redux into a React application. Also learn how to extend Redux with various tools from its ecosystem, including Reselect, Immer, and Redux Toolkit, to reduce boilerplate and speed up your development!",
             time: "4 hours,41 minutes <Strong> CC </Strong>",
             btn1: "Watch Free Preview",
-            btn2: "Get Full Access"
+            btn2: "Watch Now"
         }, {
             id: "vue",
             image: "https://static.frontendmasters.com/assets/courses/2021-02-18-production-vue/thumb.webp",
@@ -1594,7 +1594,7 @@
             info: "Learn component design patterns, workflows to enhance productivity, testing methodologies, state management, routing, best practices for architecting increasingly complex applications, and more.",
             time: "4 hours,37 minutes <Strong> CC </Strong>",
             btn1: "Watch Free Preview",
-            btn2: "Get Full Access"
+            btn2: "Watch Now"
         }];
 
         let store = localStorage.setItem("content", JSON.stringify(a));
@@ -1629,7 +1629,7 @@
                     duration.innerHTML = p.time;
                     button1.innerHTML = p.btn1;
                     button2.innerHTML = p.btn2;
-                    button1.href = "particularCourse.html";
+                    button1.href = "particular";
 
                     // execution
 
